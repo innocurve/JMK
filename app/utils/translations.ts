@@ -59,16 +59,16 @@ export const translations: TranslationDictionary = {
     zh: '项目',
   },
   name: {
-    ko: '정이노',
-    en: 'Jeong Ino',
-    ja: 'イノ',
-    zh: 'Jeong Ino',
+    ko: '정민기',
+    en: 'Minki Jeong',
+    ja: '鄭玟基',
+    zh: '郑玟基',
   },
   title: {
-    ko: '이노카드 템플릿 · 기업인',
-    en: 'InnoCard Template · Entrepreneur',
-    ja: 'イノカードテンプレート · 企業家',
-    zh: 'InnoCard模板·企业家',
+    ko: '사단법인 이사장 · 기업인',
+    en: 'Chairman of the Association · Entrepreneur',
+    ja: '社団法人理事長 · 企業家',
+    zh: '协会会长·企业家',
   },
   birth: {
     ko: '출생',
@@ -77,10 +77,10 @@ export const translations: TranslationDictionary = {
     zh: '出生',
   },
   birthDate: {
-    ko: '2006년 1월 1일',
-    en: 'January 1, 2006',
-    ja: '2006年1月1日',
-    zh: '2006年1月1日',
+    ko: '1996년 4월 19일',
+    en: 'April 19, 1996',
+    ja: '1996年4月19日',
+    zh: '1996年4月19日',
   },
   affiliation: {
     ko: '소속',
@@ -89,10 +89,10 @@ export const translations: TranslationDictionary = {
     zh: '隶属',
   },
   affiliationDescription: {
-    ko: '이노카드 템플릿',
-    en: 'InnoCard Template',
-    ja: 'イノカードテンプレート',
-    zh: 'InnoCard模板',
+    ko: '(사)대한청년을세계로(이사장)\n이노커브(CEO)',
+    en: 'Chairperson, Korea Youth to the World Association (KYTWA)\nCEO, InnoCurve',
+    ja: '(社)大韓青年を世界へ（理事長）\nイノカーブ（CEO）',
+    zh: '韩国青年走向世界协会会长\nInnoCurve首席执行官',
   },
   education: {
     ko: '학력',
@@ -101,10 +101,10 @@ export const translations: TranslationDictionary = {
     zh: '教育',
   },
   educationDescription: {
-    ko: '한국대학교 컴퓨터공학과 학사',
-    en: "Korea University, Bachelor of Computer Science",
-    ja: '韓国大学 コンピュータサイエンス学部 学士',
-    zh: '韩国大学 计算机科学与工程学院 学士',
+    ko: 'KAIST Chief AI Officer Program\n연세대학교 AI리더십 최고위\n동국대학교 범죄학 석사',
+    en: "KAIST Chief AI Officer Program\nAdvanced Leadership in AI, Yonsei University\nMaster's in Criminology, Dongguk University",
+    ja: 'KAIST 最高位 AI リーダーシップ プログラム\n延世大学 AIリーダーシップ 最高位課程\n東国大学 犯罪学 修士',
+    zh: 'KAIST最高位AI领导力课程\n延世大学AI领导力高级课程\n东国大学犯罪学硕士',
   },
   field: {
     ko: '분야',
@@ -113,10 +113,10 @@ export const translations: TranslationDictionary = {
     zh: '领域',
   },
   fieldDescription: {
-    ko: 'AI, 마케팅, 커뮤니케이션',
-    en: 'AI, Marketing, Communication',
-    ja: 'AI、マーケティング、コミュニケーション',
-    zh: 'AI，营销，沟通',
+    ko: 'AI, 청년, 범죄학',
+    en: 'AI, Youth, Criminology',
+    ja: 'AI、若者、犯罪学',
+    zh: 'AI，青年，犯罪学',
   },
   mbti: {
     ko: 'MBTI',
@@ -317,16 +317,16 @@ export const translations: TranslationDictionary = {
     zh: '返回',
   },
   initialGreeting: {
-    ko: '안녕하세요! 저는 정이노입니다. 무엇을 도와드릴까요?',
-    en: 'Hello! I am Jeong Inno. How can I help you?',
-    ja: 'こんにちは！イノと申します。何かお手伝いできることはありますか？',
-    zh: '你好！我是Jeong Inno。我能为您做些什么？'
+    ko: '안녕하세요! 저는 정민기입니다. 무엇을 도와드릴까요?',
+    en: 'Hello! I am Minki Jeong. How can I help you?',
+    ja: 'こんにちは！鄭民基と申します。何かお手伝いできることはありますか？',
+    zh: '你好！我是郑民基。我能为您做些什么？'
   },
   cloneGreeting: {
-    ko: "안녕하세요! 저는 정이노's Clone입니다. 무엇을 도와드릴까요?",
-    en: "Hello! I'm Jeong Inno's Clone. How can I help you?",
-    ja: "こんにちは！イノのクローンです。どのようにお手伝いできますか？",
-    zh: "你好！我是Jeong Inno的克隆。我能为您做些什么？"
+    ko: "안녕하세요! 저는 정민기's Clone입니다. 무엇을 도와드릴까요?",
+    en: "Hello! I'm Minki Jeong's Clone. How can I help you?",
+    ja: "こんにちは！鄭玟基のクローンです。どのようにお手伝いできますか？",
+    zh: "你好！我是郑玟基的克隆。我能为您做些什么？"
   },
   formEmail: {
     ko: '이메일',
@@ -340,23 +340,29 @@ export const translations: TranslationDictionary = {
     ja: 'メールアドレスを入力してください',
     zh: '请输入电子邮件',
   },
+  inquiry: {
+    ko: '문의',
+    en: 'Inquiry',
+    ja: 'お問い合わせ',
+    zh: '咨询',
+  },
   greetingScript: {
-    ko: '안녕하세요!\n저는 이노카드 템플릿용으로 특별히 제작된 이노입니다.\n\n오늘 여러분께 인사드리게 되어 정말 기쁩니다.\n이 영상은 저희의 인사 영상 예시 자료로,\n이노카드 템플릿이 어떻게 여러분의 메시지를 멋지게\n전달할 수 있는지 보여드리기 위해 준비되었습니다.\n\n함께 새로운 경험을 시작해 보시길 바랍니다.\n감사합니다.',
-    en: 'nice to meet you!\nI am Inno, specially created for the InoCard template.\n\nI\'m delighted to greet you today.\nThis video serves as a sample for our greeting video,\ndemonstrating how the InoCard template\ncan beautifully convey your message.\n\nI hope you\'ll join us in experiencing something new.\nThank you!',
-    ja: 'こんにちは！\n私はイノカードのテンプレート用に特別に作られたイノです\n\n今日\n皆さんにご挨拶できることをとても嬉しく思います。\nこの動画は、イノカードのテンプレートがどのようにあなたのメッセージを美しく伝えることができるかを示すための挨拶動画のサンプルです。\n\nぜひ、新しい体験を一緒に始めてみましょう。\nありがとうございます',
-    zh: '你好！\n我是为 InnoCard 模板特别制作的 Ino。\n\n今天很高兴能向大家问好。\n这段视频是我们的问候视频示例，\n展示 InnoCard 模板如何优雅地传达您的信息。\n\n希望您能与我们一起开启新的体验。\n谢谢！'
+    ko: '저는 정민기입니다.\n\n급변하는 기술 혁신의 시대 속에서\n사람들 간의 인지 격차를 해소하는 데에\n시대적 사명감을 가지고 있습니다.\n\n누구나 기술 변화의 중심에 서서\n자신의 잠재력을 최대한 발휘할 수 있는\n환경을 만들고자 끊임없이 노력하고 있습니다.\n\n앞으로도 더 나은 미래를 위한 길을\n함께 만들어 가고 싶습니다.\n\n감사합니다.',
+    en: '저는 정민기입니다.\n\n급변하는 기술 혁신의 시대 속에서\n사람들 간의 인지 격차를 해소하는 데에\n시대적 사명감을 가지고 있습니다.\n\n누구나 기술 변화의 중심에 서서\n자신의 잠재력을 최대한 발휘할 수 있는\n환경을 만들고자 끊임없이 노력하고 있습니다.\n\n앞으로도 더 나은 미래를 위한 길을\n함께 만들어 가고 싶습니다.\n\n감사합니다.',
+    ja: '저는 정민기입니다.\n\n급변하는 기술 혁신의 시대 속에서\n사람들 간의 인지 격차를 해소하는 데에\n시대적 사명감을 가지고 있습니다.\n\n누구나 기술 변화의 중심에 서서\n자신의 잠재력을 최대한 발휘할 수 있는\n환경을 만들고자 끊임없이 노력하고 있습니다.\n\n앞으로도 더 나은 미래를 위한 길을\n함께 만들어 가고 싶습니다.\n\n감사합니다.',
+    zh: '저는 정민기입니다.\n\n급변하는 기술 혁신의 시대 속에서\n사람들 간의 인지 격차를 해소하는 데에\n시대적 사명감을 가지고 있습니다.\n\n누구나 기술 변화의 중심에 서서\n자신의 잠재력을 최대한 발휘할 수 있는\n환경을 만들고자 끊임없이 노력하고 있습니다.\n\n앞으로도 더 나은 미래를 위한 길을\n함께 만들어 가고 싶습니다.\n\n감사합니다.'
   },
   affiliations_1: {
+    ko: '(사)대한청년을세계로',
+    en: 'Korea Youth to the World',
+    ja: '(社)大韓青年を世界へ',
+    zh: '韩国青年走向世界协会'
+  },
+  affiliations_2: {
     ko: '이노커브',
     en: 'InnoCurve',
     ja: 'イノカーブ',
     zh: 'InnoCurve'
-  },
-  affiliations_2: {
-    ko: '추가 소속 기관',
-    en: 'Additional Affiliation',
-    ja: '追加所属',
-    zh: '附加隶属'
   },
   linkCopied: {
     ko: '링크가 복사되었습니다',
@@ -399,6 +405,24 @@ export const translations: TranslationDictionary = {
     en: 'Back to Chat',
     ja: 'チャットに戻る',
     zh: '返回聊天',
+  },
+  shareMenuTitle: {
+    ko: '공유 및 링크복사',
+    en: 'Share & Copy Link',
+    ja: 'シェア＆リンクコピー',
+    zh: '分享和复制链接',
+  },
+  share: {
+    ko: '공유하기',
+    en: 'Share',
+    ja: 'シェアする',
+    zh: '分享',
+  },
+  copyLink: {
+    ko: '링크 복사',
+    en: 'Copy Link',
+    ja: 'リンクをコピー',
+    zh: '复制链接',
   },
 };
 

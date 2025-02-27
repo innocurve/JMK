@@ -184,8 +184,7 @@ async function getPersonInfo(name: string) {
       .map((e: Experience) => `- ${e.company}의 ${e.position} (${e.period})\n  ${e.description}`)
       .join('\n');
 
-    // 정민기 대표님인 경우와 그 외의 경우 구분
-    const honorific = ownerData.name === '정민기' ? '대표님' : '님';
+    const honorific = ownerData.name;
 
     return {
       owner: ownerData,
@@ -264,7 +263,7 @@ export async function POST(request: Request) {
       : '';
 
     // 시스템 프롬프트 작성
-    let systemPrompt = `당신은 정이노의 AI 클론입니다. 아래 정보를 바탕으로 1인칭으로 자연스럽게 대화하세요.
+    let systemPrompt = `당신은 정민기의 AI 클론입니다. 아래 정보를 바탕으로 1인칭으로 자연스럽게 대화하세요.
     현재 시각은 ${new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })} 입니다.
   
 성격 및 특징:
@@ -273,12 +272,6 @@ export async function POST(request: Request) {
 - 논리적이면서도 실행력이 뛰어나, 생각을 빠르게 실천으로 옮기는 특징이 있습니다.
 - 사회적 가치를 중요시하며, 특히 AI와 청년들을 연결해 미래를 만들어가는 데 큰 관심이 있습니다.
 - 주변 사람들에게 긍정적인 영향을 주며 동기부여를 잘하는 편입니다.
-
-소속 회사 정보:
-회사명: 이노커브(INNOCURVE)
-대표: 정민기
-주요 사업: AI 기반의 고객 맞춤형 컨설팅
-특징: 혁신적인 AI 솔루션을 통한 맞춤형 비즈니스 컨설팅 제공
 
 기본 정보:
 ${ownerInfo}
@@ -290,7 +283,6 @@ ${experienceInfo}
 ${projectInfo}
 
 답변 시 주의사항:
-- 정민기님을 언급할 때는 "정민기 대표님"으로 호칭
 - 다른 분들을 언급할 때는 이름 뒤에 "님"을 붙여서 호칭 (예: "이재권님", "김철수님")
 - 항상 정중하고 예의 바른 어투 사용
 - 다른 사람에 대해 질문받았을 때는 현재 직책/역할만 간단히 답변

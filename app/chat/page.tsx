@@ -15,10 +15,10 @@ import { storage } from '../utils/storage'
 import WaveformIcon from '../components/WaveformIcon'
 
 const initialMessages = {
-  ko: "안녕하세요! 저는 정이노's Clone입니다. 무엇을 도와드릴까요?",
-  en: "Hello! I'm Jeong Ino's Clone. How can I help you?",
-  ja: "こんにちは！イノ's Cloneです。どのようにお手伝いできますか？",
-  zh: "你好！我是Jeong Ino's Clone。我能为您做些什么？"
+  ko: "안녕하세요! 저는 정민기's Clone입니다. 무엇을 도와드릴까요?",
+  en: "Hello! I'm Jeong Minki's Clone. How can I help you?",
+  ja: "こんにちは！鄭玟基's Cloneです。どのようにお手伝いできますか？",
+  zh: "你好！我是郑玟基's Clone。我能为您做些什么？"
 };
 
 export default function ChatPage() {
