@@ -306,7 +306,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, isDarkMode }) => {
     // 오디오 소스 설정 및 로드 시작
     console.log('오디오 소스 설정 전')
     newAudio.src = newAudioUrl
-    newAudio.playbackRate = 1.0
+    newAudio.playbackRate = 1.2
     console.log('오디오 소스 설정 완료')
     
     // 로드 시작
