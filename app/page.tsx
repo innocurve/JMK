@@ -21,6 +21,7 @@ import ContactOptions from './components/ContactOptions'
 import type { PostData } from './types/post'
 import ShareButton from './components/ShareButton'
 import { useDarkMode } from './hooks/useDarkMode'
+import Lightbox from './components/Lightbox'
 
 export default function Home() {
 const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -150,6 +151,7 @@ const [posts, setPosts] = useState<PostData[]>([
 
 const router = useRouter();
 const { isDarkMode, toggleDarkMode } = useDarkMode()
+const [showLightbox, setShowLightbox] = useState(false)
 
 // 로컬스토리지 초기화 함수
 const resetLocalStorage = () => {
@@ -307,14 +309,17 @@ return (
         <FadeInSection>
           <section id="profile" className="mb-8 bg-white dark:bg-gray-800 rounded-xl p-6 sm:p-10 shadow-lg overflow-hidden relative">
             <div className="flex flex-col items-center space-y-6">
-              <div className="w-40 h-40 sm:w-56 sm:h-56 relative">
-                <Image 
+              <div 
+                className="w-40 h-40 sm:w-56 sm:h-56 relative rounded-full overflow-hidden cursor-pointer"
+                onClick={() => setShowLightbox(true)}
+              >
+                <Image
                   src="/profile.png"
-                  alt={translate('name', language)} 
+                  alt={translate('name', language)}
                   fill
                   sizes="(max-width: 640px) 160px, 224px"
+                  className="object-cover"
                   priority
-                  className="rounded-full object-cover object-top w-auto h-auto" 
                 />
               </div>
               <div className="text-center">
@@ -514,6 +519,14 @@ return (
         </div>
       </div>
     </footer>
+
+    {showLightbox && (
+      <Lightbox
+        src="/profile.png"
+        alt={translate('name', language)}
+        onClose={() => setShowLightbox(false)}
+      />
+    )}
   </div>
 )
 }

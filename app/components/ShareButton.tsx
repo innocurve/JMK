@@ -11,17 +11,24 @@ interface ShareButtonProps {
 export default function ShareButton({ language }: ShareButtonProps) {
   const [showToast, setShowToast] = useState(false)
 
+  // 메인 도메인 URL만 가져오는 함수
+  const getMainDomainUrl = () => {
+    const url = new URL(window.location.href)
+    return `${url.protocol}//${url.host}`
+  }
+
   // 네이티브 공유 기능
   const handleShare = async () => {
+    const mainUrl = getMainDomainUrl()
     try {
       await navigator.share({
         title: 'InnoCard',
-        url: window.location.href
+        url: mainUrl
       })
     } catch (err) {
       // 공유 실패 시 클립보드 복사로 폴백
       try {
-        await navigator.clipboard.writeText(window.location.href)
+        await navigator.clipboard.writeText(mainUrl)
         setShowToast(true)
         setTimeout(() => setShowToast(false), 2000)
       } catch (clipboardErr) {

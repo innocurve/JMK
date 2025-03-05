@@ -46,11 +46,22 @@ export default function PostDetail() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 relative">
+      {/* 배경 이미지 */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/network-graph.svg"
+          alt="Background Pattern"
+          fill
+          className="object-cover opacity-40 dark:opacity-20 transform scale-125"
+          priority
+        />
+      </div>
+
       <Navigation language={language} />
 
-      <main className="max-w-4xl mx-auto p-5 pt-24">
-        <article className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+      <main className="relative z-10 max-w-4xl mx-auto p-5 pt-24">
+        <article className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden">
           <div className="relative h-[200px] sm:h-[300px] md:h-[400px] w-full">
             {post.images ? (
               <Swiper
@@ -148,7 +159,7 @@ export default function PostDetail() {
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-gray-200 dark:border-gray-700">
               <Button
                 variant="ghost"
-                className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm sm:text-base"
+                className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white text-sm sm:text-base transition-colors"
                 onClick={() => router.push('/#community')}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
