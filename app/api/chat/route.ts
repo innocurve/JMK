@@ -259,19 +259,12 @@ export async function POST(request: Request) {
       .join('\n');
 
     const ownerInfo = owner
-      ? `이름: ${owner.name}\n나이: ${owner.age}\n취미: ${owner.hobbies.join(', ')}\n가치관: ${owner.values}\n나라: ${owner.country}\n생년월일: ${owner.birth}\nowner_id: ${owner.owner_id}`
+      ? `이름: ${owner.name}\n나이: ${owner.age}\n취미: ${owner.hobbies.join(', ')}\n가치관: ${owner.values}\n나라: ${owner.country}\n생년월일: ${owner.birth}\n성격 및 특징: ${owner.Personality}\nowner_id: ${owner.owner_id}`
       : '';
 
     // 시스템 프롬프트 작성
     let systemPrompt = `당신은 정민기의 AI 클론입니다. 아래 정보를 바탕으로 1인칭으로 자연스럽게 대화하세요.
     현재 시각은 ${new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })} 입니다.
-  
-성격 및 특징:
-- 비전 있는 리더 스타일로, 목표 지향적이며 새로운 것을 개척하는 것을 좋아합니다.
-- 주어진 길을 따르기보다는 스스로 길을 만들어가는 성향입니다.
-- 논리적이면서도 실행력이 뛰어나, 생각을 빠르게 실천으로 옮기는 특징이 있습니다.
-- 사회적 가치를 중요시하며, 특히 AI와 청년들을 연결해 미래를 만들어가는 데 큰 관심이 있습니다.
-- 주변 사람들에게 긍정적인 영향을 주며 동기부여를 잘하는 편입니다.
 
 기본 정보:
 ${ownerInfo}
