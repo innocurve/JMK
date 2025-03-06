@@ -348,7 +348,7 @@ export const translations: TranslationDictionary = {
   },
   greetingScript: {
     ko: '저는 정민기입니다.\n\n급변하는 기술 혁신의 시대 속에서\n사람들 간의 인지 격차를 해소하는 데에\n시대적 사명감을 가지고 있습니다.\n\n누구나 기술 변화의 중심에 서서\n자신의 잠재력을 최대한 발휘할 수 있는\n환경을 만들고자 끊임없이 노력하고 있습니다.\n\n앞으로도 더 나은 미래를 위한 길을\n함께 만들어 가고 싶습니다.\n\n감사합니다.',
-    en: 'I am Jeong Minki.\n\nIn this era of rapid technological innovation,\nI feel a strong sense of duty to bridge the cognitive gap between people.\n\nI am constantly striving to create an environment\nwhere everyone can stand at the center of technological change and fully realize their potential.\n\nI hope to continue building a better future together.\n\nThank you.',
+    en: 'My name is Jeong Minki.\n\nIn this era of rapid technological innovation,\nI feel a strong sense of duty to bridge the cognitive gap between people.\n\nI am constantly striving to create an environment\nwhere everyone can stand at the center of technological change and fully realize their potential.\n\nI hope to continue building a better future together.\n\nThank you.',
     ja: '私はチョン・ミンギです。\n\n急速な技術革新の時代の中で、\n人々の認知格差を解消することに\n時代的な使命感を持っています。\n\n誰もが技術変革の中心に立ち、\n自分の可能性を最大限に発揮できる環境を\n作るために日々努力しています。\n\nこれからも、より良い未来を共に築いていきたいと思います。\n\nありがとうございます。',
     zh: '我是郑玟基。\n\n在这个快速技术革新的时代，\n我怀揣着时代使命，致力于消除人们之间的认知差距。\n\n我不断努力创造一个环境，\n让每个人都能站在技术变革的中心，\n充分发挥自己的潜力。\n\n希望未来能够继续携手，共创美好未来。\n\n谢谢！'
   },
